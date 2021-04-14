@@ -8,6 +8,14 @@
     ],
     "allowJs": true,
     "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@components/*": ["components/*"],
+      "@public/*": ["public/*"],
+      "@styles/*": ["styles/*"],
+      "@utils/*": ["utils/*"],
+      "@lottie/*": ["lottie-files/*"]
+    },
     "strict": false,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,

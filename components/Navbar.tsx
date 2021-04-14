@@ -22,7 +22,11 @@ export const Navbar: React.FC<Props> = (props) => {
       <div className="flex justify-between items-center pt-10 px-10 absolute w-full">
         <div className="flex items-center">
           <Link href="/">
-            <h2 className={`uppercase tracking-widest text-2xl mr-16 z-20 ${open ? "text-white" : null}`}>
+            <h2
+              className={`uppercase tracking-widest text-2xl mr-16 z-20 ${
+                open ? "text-white" : null
+              }`}
+            >
               Faisal Sayed<span className="text-red-600">.</span>
             </h2>
           </Link>
@@ -42,16 +46,23 @@ export const Navbar: React.FC<Props> = (props) => {
             </div>
           </a>
         </div>
-        <button className={open ? "z-20 p-1 bg-white rounded-full" : ""} onClick={() => setPlay(true)}>
+        <button
+          className={
+            open
+              ? "z-20 p-1 bg-white focus:outline-none rounded-full"
+              : "focus:outline-none"
+          }
+          onClick={() => setPlay(true)}
+        >
           <Lottie
             loop={false}
             animationData={animationData}
             segments={segments}
             play={play}
             onEnterFrame={(frame) => {
-              if (segmentFrom === 0 && frame.currentTime > 30) {
-                setOpen(true);
-              }
+              if (segmentFrom === 0 && frame.currentTime > 1) setOpen(true);
+              else if (segmentFrom === 45 && frame.currentTime > 1)
+                setOpen(false);
             }}
             onComplete={() => {
               setPlay(false);
@@ -59,7 +70,6 @@ export const Navbar: React.FC<Props> = (props) => {
                 setSegmentFrom(45);
                 setSegmentTo(91);
               } else if (segmentFrom === 45) {
-                setOpen(false);
                 setSegmentFrom(0);
                 setSegmentTo(45);
               }

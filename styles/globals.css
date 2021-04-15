@@ -16,3 +16,8 @@ a {
   transform: rotateX('0deg'), skewY("0deg");
   transition-duration: 0.3ms;
 }
+
+.bar {
+  height: 2px;
+  width: 40px;
+}

@@ -4,9 +4,7 @@ import React, { useEffect } from "react";
 import Lottie from "react-lottie-player";
 import animationData from "@lottie/boy-vr.json";
 
-interface Props {}
-
-const Intro: React.FC<Props> = (props) => {
+const Intro: React.FC = () => {
   const controls = useAnimation();
   const { ref, inView } = useInView();
 
@@ -39,7 +37,7 @@ const Intro: React.FC<Props> = (props) => {
 
   return (
     <>
-      <div className="flex items-center justify-end">
+      <div className="flex bg-wave bg-cover items-center justify-end">
         <div className="flex items-center justify-center min-h-screen flex-1 pt-32 flex-col">
           <motion.h1
             variants={container}
@@ -56,10 +54,10 @@ const Intro: React.FC<Props> = (props) => {
           </motion.h1>
         </div>
         <motion.div
-          initial={{ translateX: "100%" }}
-          animate={{ translateX: "0%" }}
-          transition={{ duration: 0.4 }}
-          className="bg-p_yy h-screen w-1/3 flex-2 flex items-center justify-center"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.3 }}
+          className="h-screen flex items-center justify-center"
         >
           <Lottie loop play animationData={animationData} />
         </motion.div>

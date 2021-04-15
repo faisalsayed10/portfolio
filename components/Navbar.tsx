@@ -5,12 +5,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Lottie from "react-lottie-player";
 import animationData from "@lottie/40209-hamburger-with-colors.json";
 import NavbarOverlay from "./NavbarOverlay";
-// @ts-ignore
-// import Wave from "@public/wave.svg"
 
-interface Props {}
-
-export const Navbar: React.FC<Props> = (props) => {
+export const Navbar: React.FC = () => {
   const [play, setPlay] = useState(false);
   const [segmentFrom, setSegmentFrom] = useState(0);
   const [segmentTo, setSegmentTo] = useState(45);

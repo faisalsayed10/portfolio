@@ -5,11 +5,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Lottie from "react-lottie-player";
 import animationData from "@lottie/49075-cube-loader-representing-module-or-logic.json";
 import { motion } from "framer-motion";
-import Link from "next/link";
 
-interface Props {}
-
-const NavbarOverlay: React.FC<Props> = (props) => {
+const NavbarOverlay: React.FC = () => {
   const mainDivVariants = {
     hidden: { opacity: 0 },
     visible: { opacity: 1 },

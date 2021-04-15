@@ -31,27 +31,20 @@ export const Navbar: React.FC<Props> = (props) => {
             </h2>
           </Link>
           <a href="https://github.com/faisalsayed10" target="_blank">
-            <div className="flex items-center mr-10">
-              <FontAwesomeIcon className="text-gray-400 mr-3" icon={faGithub} />
-              <h2 className="tracking-wider text-l text-gray-400">Github</h2>
+            <div className="flex items-center mr-10 text-gray-400 hover:text-gray-600">
+              <FontAwesomeIcon className="mr-3" icon={faGithub} />
+              <h2 className="tracking-wider text-l">Github</h2>
             </div>
           </a>
           <a href="https://twitter.com/faisal_sayed05" target="_blank">
-            <div className="flex items-center">
-              <FontAwesomeIcon
-                className="text-gray-400 mr-3"
-                icon={faTwitter}
-              />
-              <h2 className="tracking-wider text-l text-gray-400">Twitter</h2>
+            <div className="flex items-center text-gray-400 hover:text-gray-600">
+              <FontAwesomeIcon className="mr-3" icon={faTwitter} />
+              <h2 className="tracking-wider text-l">Twitter</h2>
             </div>
           </a>
         </div>
         <button
-          className={
-            open
-              ? "z-20 p-1 bg-white focus:outline-none rounded-full"
-              : "focus:outline-none"
-          }
+          className={"z-20 focus:outline-none"}
           onClick={() => setPlay(true)}
         >
           <Lottie
@@ -74,7 +67,7 @@ export const Navbar: React.FC<Props> = (props) => {
                 setSegmentTo(45);
               }
             }}
-            className="w-11 h-11"
+            className="w-8 h-8"
           />
         </button>
       </div>

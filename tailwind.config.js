@@ -8,6 +8,7 @@ module.exports = {
       ...theme("colors"),
       p_dp: "#575fcf",
       p_dark: "#22292F",
+      p_yy: "#ffdd59",
       secondary: "#ffed4a",
       danger: "#e3342f",
     }),

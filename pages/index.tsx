@@ -5,6 +5,7 @@ import Intro from "@components/Intro";
 import WhatIdo from "@components/WhatIdo";
 import { useState } from "react";
 import NavbarOverlay from "@components/NavbarOverlay";
+import About from "@components/About";
 
 const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
   ssr: false,
@@ -32,10 +33,13 @@ export default function Home() {
         {open ? (
           <NavbarOverlay />
         ) : (
-          <div className="ml-32">
-            <Intro />
-            <WhatIdo />
-          </div>
+          <>
+            <div>
+              <Intro />
+              <WhatIdo />
+              <About />
+            </div>
+          </>
         )}
       </div>
     </>

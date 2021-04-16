@@ -37,13 +37,13 @@ const Intro: React.FC = () => {
 
   return (
     <>
-      <div className="flex bg-wave bg-cover flex-col-reverse lg:flex-row items-center lg:items-end lg:pb-72 mb-12 min-h-screen justify-between">
+      <div className="flex bg-wave bg-cover flex-col-reverse lg:flex-row items-center lg:items-end lg:pb-40 mb-20 min-h-screen justify-between">
         <motion.h1
           variants={container}
           ref={ref}
           initial="hidden"
           animate={controls}
-          className="text-5xl lg:text-6xl tracking-normal leading-tight font-semibold antialiased"
+          className="text-5xl lg:text-7xl ml-40 tracking-normal leading-tight font-semibold antialiased"
         >
           {items.map((item, i) => (
             <motion.p key={i} variants={listItem}>

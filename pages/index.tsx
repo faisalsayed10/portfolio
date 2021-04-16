@@ -3,12 +3,16 @@ import { Navbar } from "@components/Navbar";
 import dynamic from "next/dynamic";
 import Intro from "@components/Intro";
 import WhatIdo from "@components/WhatIdo";
+import { useState } from "react";
+import NavbarOverlay from "@components/NavbarOverlay";
 
 const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
   ssr: false,
 });
 
 export default function Home() {
+  const [open, setOpen] = useState(false);
+
   return (
     <>
       <AnimatedCursor
@@ -24,9 +28,15 @@ export default function Home() {
         <title>Faisal Sayed</title>
       </Head>
       <div className="main">
-        <Navbar />
-        <Intro />
-        <WhatIdo />
+        <Navbar open={open} setOpen={setOpen} />
+        {open ? (
+          <NavbarOverlay />
+        ) : (
+          <div className="ml-32">
+            <Intro />
+            <WhatIdo />
+          </div>
+        )}
       </div>
     </>
   );

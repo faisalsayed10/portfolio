@@ -6,11 +6,7 @@ module.exports = {
     variants: {},
     backgroundColor: (theme) => ({
       ...theme("colors"),
-      p_dp: "#575fcf",
       p_dark: "#22292F",
-      p_yy: "#ffdd59",
-      p_b: "#2378f9",
-      danger: "#e3342f",
     }),
     extend: {
       backgroundImage: (theme) => ({

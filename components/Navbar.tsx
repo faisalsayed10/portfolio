@@ -4,13 +4,16 @@ import { faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Lottie from "react-lottie-player";
 import animationData from "@lottie/40209-hamburger-with-colors.json";
-import NavbarOverlay from "./NavbarOverlay";
 
-export const Navbar: React.FC = () => {
+interface Props {
+  open: boolean;
+  setOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+export const Navbar: React.FC<Props> = ({ open, setOpen }) => {
   const [play, setPlay] = useState(false);
   const [segmentFrom, setSegmentFrom] = useState(0);
   const [segmentTo, setSegmentTo] = useState(45);
-  const [open, setOpen] = useState(false);
   const segments = [segmentFrom, segmentTo];
 
   return (
@@ -67,7 +70,6 @@ export const Navbar: React.FC = () => {
           />
         </button>
       </div>
-      {open ? <NavbarOverlay /> : null}
     </>
   );
 };

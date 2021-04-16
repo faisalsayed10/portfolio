@@ -5,39 +5,20 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Lottie from "react-lottie-player";
 import animationData from "@lottie/49075-cube-loader-representing-module-or-logic.json";
 import { motion } from "framer-motion";
+import { container, defaultVariant, overlayListVariant } from "util/variants";
 
 const NavbarOverlay: React.FC = () => {
-  const mainDivVariants = {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1 },
-  };
-
   const items = ["About", "Projects", "Contact"];
-
-  const container = {
-    hidden: { opacity: 0 },
-    show: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.3,
-      },
-    },
-  };
-
-  const listItem = {
-    hidden: { opacity: 0, y: "60%" },
-    show: { opacity: 1, y: "0%" },
-  };
 
   return (
     <>
       <motion.div
         initial="hidden"
-        animate="visible"
+        animate="show"
         exit="hidden"
         transition={{ duration: 0.5 }}
         className="absolute z-10 bg-white w-full"
-        variants={mainDivVariants}
+        variants={defaultVariant}
       >
         <div className="flex items-center justify-left min-h-screen">
           <motion.div
@@ -87,7 +68,7 @@ const NavbarOverlay: React.FC = () => {
             <div className="ml-16">
               <motion.ul variants={container} initial="hidden" animate="show">
                 {items.map((item, i) => (
-                  <motion.li key={i} variants={listItem}>
+                  <motion.li key={i} variants={overlayListVariant}>
                     <a href={`/${item.toLowerCase()}`}>
                       <h1 className="text-6xl tracking-wide mb-8 font-bold">
                         {item}

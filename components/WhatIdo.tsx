@@ -1,6 +1,7 @@
 import { motion, useAnimation } from "framer-motion";
 import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
+import { whatIdoVariant } from "util/variants";
 
 const WhatIdo: React.FC = () => {
   const controls = useAnimation();
@@ -11,11 +12,6 @@ const WhatIdo: React.FC = () => {
     if (!inView) controls.start("hidden");
   }, [controls, inView]);
 
-  const variant = {
-    hidden: { opacity: 0, rotateX: "90deg", skewY: "-5deg" },
-    show: { opacity: 1, rotateX: "0deg", skewY: "0deg" },
-  };
-
   return (
     <>
       <div className="flex max-w-screen-prose mb-20">
@@ -25,7 +21,7 @@ const WhatIdo: React.FC = () => {
           </h3>
           <h2 className="text-4xl mb-32 font-semibold antialiased">
             <motion.p
-              variants={variant}
+              variants={whatIdoVariant}
               ref={ref}
               initial="hidden"
               animate={controls}
@@ -33,7 +29,7 @@ const WhatIdo: React.FC = () => {
               I enjoy creating products,
             </motion.p>
             <motion.p
-              variants={variant}
+              variants={whatIdoVariant}
               ref={ref}
               initial="hidden"
               animate={controls}
@@ -43,7 +39,7 @@ const WhatIdo: React.FC = () => {
           </h2>
           <h1 className="text-9xl font-semibold antialiased">
             <motion.p
-              variants={variant}
+              variants={whatIdoVariant}
               ref={ref}
               initial="hidden"
               animate={controls}
@@ -51,7 +47,7 @@ const WhatIdo: React.FC = () => {
               Think.&nbsp;Make.
             </motion.p>
             <motion.p
-              variants={variant}
+              variants={whatIdoVariant}
               ref={ref}
               initial="hidden"
               animate={controls}

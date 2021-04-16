@@ -37,29 +37,26 @@ const Intro: React.FC = () => {
 
   return (
     <>
-      <div className="flex bg-wave bg-cover items-center justify-end">
-        <div className="flex items-center justify-center min-h-screen flex-1 pt-32 flex-col">
-          <motion.h1
-            variants={container}
-            ref={ref}
-            initial="hidden"
-            animate={controls}
-            className="text-5xl lg:text-6xl tracking-normal leading-tight font-semibold antialiased"
-          >
-            {items.map((item, i) => (
-              <motion.p key={i} variants={listItem}>
-                {item}
-              </motion.p>
-            ))}
-          </motion.h1>
-        </div>
+      <div className="flex bg-wave bg-cover flex-col-reverse lg:flex-row items-center lg:items-end lg:pb-72 mb-12 min-h-screen justify-between">
+        <motion.h1
+          variants={container}
+          ref={ref}
+          initial="hidden"
+          animate={controls}
+          className="text-5xl lg:text-6xl tracking-normal leading-tight font-semibold antialiased"
+        >
+          {items.map((item, i) => (
+            <motion.p key={i} variants={listItem}>
+              {item}
+            </motion.p>
+          ))}
+        </motion.h1>
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.3 }}
-          className="h-screen flex items-center justify-center"
         >
-          <Lottie loop play animationData={animationData} />
+          <Lottie loop play animationData={animationData} className="w-auto" />
         </motion.div>
       </div>
     </>

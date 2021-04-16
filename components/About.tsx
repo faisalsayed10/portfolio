@@ -16,7 +16,7 @@ const About: React.FC<Props> = (props) => {
 
   return (
     <>
-      <div className="flex max-w-screen-prose bg-gradient-to-r from-blue-700 to-blue-300 flex-row-reverse">
+      <div className="flex max-w-screen-prose bg-gradient-to-r mb-20 from-blue-700 to-blue-300 flex-row-reverse">
         <motion.div
           variants={defaultVariant}
           ref={ref}

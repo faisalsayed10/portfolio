@@ -1,0 +1,26 @@
+[
+  {
+    "project_image": "/carbon-slack.png",
+    "title": "Carbon Slack",
+    "desc": "A slack-bot which integrates carbon directly into slack! This makes it easier to share code snippets without leaving slack at all!",
+    "more_url": "/carbon-slack"
+  },
+  {
+    "project_image": "/safire.png",
+    "title": "Safire",
+    "desc": "An open source end to end encrypted social media platform for GenZ",
+    "more_url": "/safire"
+  },
+  {
+    "project_image": "/carbon-slack.png",
+    "title": "Chathouse",
+    "desc": "A slack-bot which integrates carbon directly into slack! This makes it easier to share code snippets without leaving slack at all!",
+    "more_url": "/carbon-slack"
+  },
+  {
+    "project_image": "/carbon-slack.png",
+    "title": "Angel Files",
+    "desc": "A slack-bot which integrates carbon directly into slack! This makes it easier to share code snippets without leaving slack at all!",
+    "more_url": "/carbon-slack"
+  }
+]

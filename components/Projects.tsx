@@ -1,13 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import mockData from "util/mockData";
 import ProjectCard from "./ProjectCard";
+import { Project } from "util/types";
 
-interface Props {}
+const Projects: React.FC = () => {
+  const [projects, setProjects] = useState<Project[]>(null)
 
-const Projects: React.FC<Props> = (props) => {
+  useEffect(() => {
+    (async () => {
+      const res = await fetch('projects.json')
+      const data: Project[] = await res.json()
+      setProjects(data)
+    })()
+  })
+
   const settings = {
     dots: true,
     arrows: true,
@@ -27,8 +35,8 @@ const Projects: React.FC<Props> = (props) => {
           On
         </h3>
         <Slider {...settings}>
-          {mockData.map((data) => (
-            <ProjectCard {...data} />
+          {projects.map((data, i) => (
+            <ProjectCard key={i} {...data} />
           ))}
         </Slider>
       </div>

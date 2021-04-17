@@ -7,6 +7,7 @@ import { useState } from "react";
 import NavbarOverlay from "@components/NavbarOverlay";
 import About from "@components/About";
 import Skills from "@components/Skills";
+import Projects from "@components/Projects";
 
 const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
   ssr: false,
@@ -40,6 +41,7 @@ export default function Home() {
               <WhatIdo />
               <About />
               <Skills />
+              <Projects />
             </div>
           </>
         )}

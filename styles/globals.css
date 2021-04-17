@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 
 a {
   color: inherit;
@@ -7,14 +7,25 @@ a {
 
 * {
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
 }
 
-.animate {
+.hover-trigger .hover-target {
+  opacity: 0;
+  transition-duration: 400ms;
+}
+
+.hover-trigger:hover .hover-target {
   opacity: 1;
-  transform: rotateX('0deg'), skewY("0deg");
-  transition-duration: 0.3ms;
+}
+
+.hover-trigger:hover .hover-image {
+  transform: scale(1.2);
+}
+
+.hover-image {
+  transition-duration: 400ms;
 }
 
 .bar {

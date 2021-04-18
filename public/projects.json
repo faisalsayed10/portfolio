@@ -8,19 +8,19 @@
   {
     "project_image": "/safire.png",
     "title": "Safire",
-    "desc": "An open source end to end encrypted social media platform for GenZ",
+    "desc": "An open source end to end encrypted social media platform for GenZ which prioritizes privacy and user safety.",
     "more_url": "/safire"
   },
   {
-    "project_image": "/carbon-slack.png",
+    "project_image": "/chathouse.png",
     "title": "Chathouse",
-    "desc": "A slack-bot which integrates carbon directly into slack! This makes it easier to share code snippets without leaving slack at all!",
-    "more_url": "/carbon-slack"
+    "desc": "A simple public drop-in chat app inspired by clubhouse built with various complex technologies such as GraphQL and Firebase.",
+    "more_url": "/chathouse"
   },
   {
-    "project_image": "/carbon-slack.png",
+    "project_image": "/angel-files.png",
     "title": "Angel Files",
-    "desc": "A slack-bot which integrates carbon directly into slack! This makes it easier to share code snippets without leaving slack at all!",
-    "more_url": "/carbon-slack"
+    "desc": "Fast and secure cloud storage service.",
+    "more_url": "/angel-files"
   }
 ]

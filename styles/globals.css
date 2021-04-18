@@ -13,7 +13,7 @@ a {
 
 .hover-trigger .hover-target {
   opacity: 0;
-  transition-duration: 400ms;
+  transition-duration: 300ms;
 }
 
 .hover-trigger:hover .hover-target {
@@ -21,7 +21,7 @@ a {
 }
 
 .hover-trigger:hover .hover-image {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .hover-image {
@@ -31,4 +31,17 @@ a {
 .bar {
   height: 2px;
   width: 40px;
+}
+
+.card {
+  height: 30rem;
+  margin-right: 0 !important;
+}
+
+.arrow {
+  transition-duration: 100ms;
+}
+
+.arrow:hover {
+  transform: scale(1.1);
 }

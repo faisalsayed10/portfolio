@@ -14,7 +14,7 @@ const Footer: React.FC<Props> = (props) => {
             <FontAwesomeIcon icon={faGithubAlt} className="mr-2" /> Source
           </p>
         </a>
-        <a href="#header">
+        <a href="#home">
           <p>
             <FontAwesomeIcon icon={faLevelUpAlt} className="mr-2" />
             Back to top

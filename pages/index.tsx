@@ -17,6 +17,7 @@ const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
 
 export default function Home() {
   const [open, setOpen] = useState(false);
+  const [play, setPlay] = useState(false);
 
   return (
     <>
@@ -32,10 +33,10 @@ export default function Home() {
       <Head>
         <title>Faisal Sayed</title>
       </Head>
-      <div className="main">
-        <Navbar open={open} setOpen={setOpen} />
+      <div className="main" id="home">
+        <Navbar open={open} setOpen={setOpen} play={play} setPlay={setPlay} />
         {open ? (
-          <NavbarOverlay setOpen={setOpen} />
+          <NavbarOverlay setOpen={setOpen} setPlay={setPlay} />
         ) : (
           <>
             <div>

@@ -7,7 +7,12 @@ import animationData from "@lottie/49075-cube-loader-representing-module-or-logi
 import { motion } from "framer-motion";
 import { container, defaultVariant, overlayListVariant } from "util/variants";
 
-const NavbarOverlay: React.FC = () => {
+interface Props {
+  setOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  setPlay: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const NavbarOverlay: React.FC<Props> = ({ setOpen, setPlay }) => {
   const items = ["About", "Projects", "Contact"];
 
   return (
@@ -69,7 +74,13 @@ const NavbarOverlay: React.FC = () => {
               <motion.ul variants={container} initial="hidden" animate="show">
                 {items.map((item, i) => (
                   <motion.li key={i} variants={overlayListVariant}>
-                    <a href={`/${item.toLowerCase()}`}>
+                    <a
+                      href={`#${item.toLowerCase()}`}
+                      onClick={() => {
+                        setOpen(false);
+                        setPlay(true);
+                      }}
+                    >
                       <h1 className="text-6xl tracking-wide mb-8 font-bold">
                         {item}
                       </h1>

@@ -8,20 +8,18 @@ import animationData from "@lottie/40209-hamburger-with-colors.json";
 interface Props {
   open: boolean;
   setOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  play: boolean;
+  setPlay: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-export const Navbar: React.FC<Props> = ({ open, setOpen }) => {
-  const [play, setPlay] = useState(false);
+export const Navbar: React.FC<Props> = ({ open, setOpen, play, setPlay }) => {
   const [segmentFrom, setSegmentFrom] = useState(0);
   const [segmentTo, setSegmentTo] = useState(45);
   const segments = [segmentFrom, segmentTo];
 
   return (
     <>
-      <div
-        className="flex justify-between items-center pt-10 px-10 absolute w-full"
-        id="header"
-      >
+      <div className="flex justify-between items-center pt-10 px-10 absolute w-full">
         <div className="flex items-center">
           <Link href="/">
             <h2

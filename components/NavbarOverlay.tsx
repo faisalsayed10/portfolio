@@ -25,19 +25,19 @@ const NavbarOverlay: React.FC<Props> = ({ setOpen, setPlay }) => {
         className="absolute z-10 bg-white w-full"
         variants={defaultVariant}
       >
-        <div className="flex items-center justify-left min-h-screen">
+        <div className="flex items-center justify-center lg:justify-between xl:justify-start min-h-screen">
           <motion.div
             initial={{ translateX: "-100%" }}
             animate={{ translateX: "0%" }}
             transition={{ duration: 0.3 }}
-            className="flex bg-p_dark h-screen w-1/5"
+            className="lg:flex hidden bg-p_dark h-screen w-64"
           >
-            <Lottie loop play animationData={animationData} />
+            <Lottie loop play animationData={animationData} className="w-auto" />
           </motion.div>
-          <div className="flex items-start ml-72">
-            <div>
+          <div className="flex items-center lg:items-start flex-col lg:flex-row xl:ml-60 lg:mr-10">
+            <div className="mb-6">
               <a href="mailto:faisal.sayed502@gmail.com" target="_blank">
-                <div className="flex items-center mr-10 mb-4">
+                <div className="flex items-center mb-4">
                   <FontAwesomeIcon
                     className="text-indigo-400 mr-3"
                     icon={faEnvelope}
@@ -48,7 +48,7 @@ const NavbarOverlay: React.FC<Props> = ({ setOpen, setPlay }) => {
                 </div>
               </a>
               <a href="https://github.com/faisalsayed10" target="_blank">
-                <div className="flex items-center mr-10 mb-4">
+                <div className="flex items-center mb-4">
                   <FontAwesomeIcon
                     className="text-indigo-400 mr-3"
                     icon={faGithub}
@@ -70,7 +70,7 @@ const NavbarOverlay: React.FC<Props> = ({ setOpen, setPlay }) => {
                 </div>
               </a>
             </div>
-            <div className="ml-16">
+            <div className="lg:ml-16">
               <motion.ul variants={container} initial="hidden" animate="show">
                 {items.map((item, i) => (
                   <motion.li key={i} variants={overlayListVariant}>

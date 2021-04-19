@@ -23,7 +23,7 @@ const Intro: React.FC = () => {
 
   return (
     <>
-      <div className="flex flex-col-reverse lg:flex-row items-center mb-20 min-h-screen justify-center lg:justify-between">
+      <div className="flex flex-col-reverse lg:flex-row items-center lg:mb-20 pt-20 lg:min-h-screen justify-center lg:justify-between">
         <motion.h1
           variants={container}
           ref={ref}

@@ -18,7 +18,10 @@ export const Navbar: React.FC<Props> = ({ open, setOpen }) => {
 
   return (
     <>
-      <div className="flex justify-between items-center pt-10 px-10 absolute w-full">
+      <div
+        className="flex justify-between items-center pt-10 px-10 absolute w-full"
+        id="header"
+      >
         <div className="flex items-center">
           <Link href="/">
             <h2

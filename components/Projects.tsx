@@ -44,7 +44,7 @@ const Projects: React.FC = () => {
 
   return (
     <>
-      <div className="mb-20">
+      <div className="mb-20" id="projects">
         <h3 className="ml-40 flex items-center text-blue-800 mb-12 text-xl font-medium antialiased">
           <div className="bar bg-blue-800 mr-3"></div>Few Projects I've Worked
           On
@@ -57,7 +57,7 @@ const Projects: React.FC = () => {
         <div className="flex items-center justify-center">
           <button
             className="mr-4 arrow focus:outline-none"
-            onClick={slider.current.slickPrev()}
+            onClick={() => slider.current.slickPrev()}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

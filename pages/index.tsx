@@ -8,6 +8,8 @@ import NavbarOverlay from "@components/NavbarOverlay";
 import About from "@components/About";
 import Skills from "@components/Skills";
 import Projects from "@components/Projects";
+import ContactForm from "@components/ContactForm";
+import Footer from "@components/Footer";
 
 const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {
   ssr: false,
@@ -33,7 +35,7 @@ export default function Home() {
       <div className="main">
         <Navbar open={open} setOpen={setOpen} />
         {open ? (
-          <NavbarOverlay />
+          <NavbarOverlay setOpen={setOpen} />
         ) : (
           <>
             <div>
@@ -42,6 +44,10 @@ export default function Home() {
               <About />
               <Skills />
               <Projects />
+              <div className="bg-wave2 bg-cover bg-no-repeat">
+                <ContactForm />
+                <Footer />
+              </div>
             </div>
           </>
         )}

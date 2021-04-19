@@ -12,7 +12,7 @@ const ProjectCard: React.FC<Props> = ({
   more_url,
 }) => {
   return (
-    <div className="flex flex-col card w-96 items-center justify-evenly relative rounded-3xl hover:shadow-2xl hover-trigger px-8 my-8 mx-4">
+    <div className="flex flex-col card w-96 items-center justify-evenly relative rounded-3xl hover:shadow-xl hover-trigger px-8 my-8 mx-4">
       <img src={project_image} className="hover-image w-auto h-36 rounded-lg" />
       <h1 className="text-2xl font-semibold">{title}</h1>
       <p className="text-md">{desc}</p>

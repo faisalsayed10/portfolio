@@ -1,8 +1,9 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import sgMail from "@sendgrid/mail";
+import { Mail } from "util/types";
 
 export default async (req: NextApiRequest, res: NextApiResponse) => {
-  const { name, email, subject, message } = req.body;
+  const { name, email, subject, message }: Mail = req.body;
 
   sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
@@ -10,7 +11,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     from: process.env.EMAIL_FROM,
     to: `faisal.sayed502@gmail.com`,
     subject: subject,
-    text: `Email: ${email} (${name}) \n Message: ${message}`,
+    text: `Email: ${email} (${name}) \nMessage: ${message}`,
   };
 
   sgMail

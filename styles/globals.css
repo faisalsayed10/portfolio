@@ -46,3 +46,7 @@ a {
 .arrow:hover {
   transform: scale(1.1);
 }
+
+.vr {
+  max-width: 600px;
+}

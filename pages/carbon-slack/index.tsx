@@ -1,3 +1,4 @@
+import ProjectNavbar from "@components/ProjectNavbar";
 import { motion } from "framer-motion";
 import Head from "next/head";
 import React from "react";
@@ -7,29 +8,11 @@ const carbonSlack = () => {
   return (
     <>
       <Head>
-        <title>Carbon Slack</title>
+        <title>Project - Carbon Slack</title>
         <link rel="icon" href="/carbon-slack.png" type="image"></link>
       </Head>
       <div className="px-10">
-        <div className="flex pt-10 items-center">
-          <h2 className="tracking-wider font-medium text-xl md:text-2xl sm:mr-16 z-20">
-            Carbon Slack
-          </h2>
-          <a href="https://github.com/faisalsayed10" target="_blank">
-            <div className="mr-10 font-medium text-gray-600 hover:text-gray-600">
-              <h2 className="tracking-wider hidden sm:block text-l">
-                Open Source
-              </h2>
-            </div>
-          </a>
-          <a href="mailto:faisal.sayed502@gmail.com" target="_blank">
-            <div className="font-medium text-gray-600 hover:text-gray-600">
-              <h2 className="tracking-wider hidden sm:block text-l">
-                Contact me
-              </h2>
-            </div>
-          </a>
-        </div>
+        <ProjectNavbar title="Carbon Slack" git_url="carbon-slack" />
         <div className="flex flex-col items-center text-center justify-center my-24">
           <motion.h1
             variants={defaultVariant}

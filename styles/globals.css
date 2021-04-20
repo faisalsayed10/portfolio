@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
 a {
   color: inherit;
@@ -7,7 +7,7 @@ a {
 
 * {
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
 }
@@ -34,11 +34,6 @@ a {
   width: 40px;
 }
 
-.card {
-  height: 30rem;
-  margin-right: 0 !important;
-}
-
 .arrow {
   transition-duration: 100ms;
 }
@@ -49,4 +44,11 @@ a {
 
 .vr {
   max-width: 600px;
+}
+
+.card {
+  height: 28rem;
+  margin: 10px;
+  padding: 2%;
+  position: relative;
 }

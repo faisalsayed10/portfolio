@@ -8,7 +8,7 @@ import NavbarOverlay from "@components/NavbarOverlay";
 import About from "@components/About";
 import Skills from "@components/Skills";
 import Projects from "@components/Projects";
-import ContactForm from "@components/ContactForm";
+import ContactForm from "@components/Contact";
 import Footer from "@components/Footer";
 
 const AnimatedCursor = dynamic(() => import("react-animated-cursor"), {

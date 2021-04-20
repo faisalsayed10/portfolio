@@ -13,6 +13,7 @@ module.exports = {
         main: "url('/bg-main.jpg')",
         wave: "url('/wave-haikei.svg')",
         wave2: "url('/wave2.svg')",
+        carbon: "url('/carbon-bg.svg')",
       }),
     },
   },

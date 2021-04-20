@@ -64,7 +64,7 @@ const carbonSlack = () => {
         <div className="flex flex-col md:flex-row items-center justify-center">
           <img
             src="/carbon-ss-1.png"
-            className="shadow-2xl md:w-1/2 rounded-md mr-6 mb-6"
+            className="shadow-2xl md:w-1/3 rounded-md mr-6 mb-6"
           />
           <img
             src="/carbon-ss-2.png"

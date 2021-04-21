@@ -18,7 +18,7 @@ const carbonSlack = () => {
             variants={defaultVariant}
             initial="hidden"
             animate="show"
-            className="text-4xl tracking-normal leading-tight font-medium antialiased mb-4"
+            className="text-5xl tracking-normal leading-tight font-medium antialiased mb-4"
           >
             <span className="text-purple-700">Carbon</span> All-in-one directly
             on <span className="underline">Slack</span>
@@ -27,7 +27,7 @@ const carbonSlack = () => {
             variants={defaultVariant}
             initial="hidden"
             animate="show"
-            className="mb-4"
+            className="mb-4 text-xl"
           >
             Create beautiful images of your code directly from slack.
           </motion.p>

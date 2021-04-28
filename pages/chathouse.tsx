@@ -40,9 +40,11 @@ const chathouse = (props: Props) => {
             Simple and fun public drop-in chat app.
           </motion.p>
           <div>
-            <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-16 rounded focus:outline-none focus:shadow-outline">
-              TRY IT
-            </button>
+            <a href="https://chathouse.vercel.app" target="_blank">
+              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-16 rounded focus:outline-none focus:shadow-outline">
+                TRY IT
+              </button>
+            </a>
           </div>
         </div>
         <div className="bg-blue-500 text-white font-medium antialiased">

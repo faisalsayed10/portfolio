@@ -64,8 +64,8 @@ const Projects: React.FC = () => {
 
         <Slider ref={slider} {...settings}>
           {projects?.map((data, i) => (
-            <div>
-              <ProjectCard key={i} {...data} />
+            <div className="pb-10" key={i}>
+              <ProjectCard {...data} />
             </div>
           ))}
         </Slider>

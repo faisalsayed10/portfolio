@@ -52,3 +52,11 @@ a {
   padding: 2%;
   position: relative;
 }
+
+.hover-card {
+  transition-duration: 300ms;
+}
+
+.hover-card:hover {
+  transform: scale(1.05);
+}

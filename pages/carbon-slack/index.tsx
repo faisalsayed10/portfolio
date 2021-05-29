@@ -31,15 +31,15 @@ const carbonSlack = () => {
           >
             Create beautiful images of your code directly from slack.
           </motion.p>
-          <div>
+          <div className="flex justify-evenly w-4/5 sm:flex-row flex-col">
             <a href="https://carbon-slack.netlify.app/slack" target="_blank">
-              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-16 rounded focus:outline-none focus:shadow-outline">
+              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 my-2 rounded focus:outline-none focus:shadow-outline">
                 GET IT
               </button>
             </a>
             <a href="https://carbon.now.sh" target="_blank">
-              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-16 ml-6 rounded focus:outline-none focus:shadow-outline">
-                Carbon Official Website
+              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 my-2 rounded focus:outline-none focus:shadow-outline">
+                Website
               </button>
             </a>
           </div>

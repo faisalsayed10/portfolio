@@ -7,6 +7,7 @@ import NavbarOverlay from "@components/NavbarOverlay";
 import About from "@components/About";
 import Skills from "@components/Skills";
 import Projects from "@components/Projects";
+import Workshops from "@components/Workshops";
 import ContactForm from "@components/Contact";
 import Footer from "@components/Footer";
 
@@ -31,6 +32,7 @@ export default function Home() {
 							<About />
 							<Skills />
 							<Projects />
+							<Workshops />
 							<div className="bg-wave2 bg-cover bg-no-repeat">
 								<ContactForm />
 								<Footer />

@@ -14,7 +14,7 @@ type Workshop = {
   author: string;
 };
 
-const url = "https://workshops.hackclub.com/workshops.json";
+const url = "/api/workshops";
 
 const Workshops: React.FC = () => {
   const { data, error } = useSWR<Workshop[]>(url, fetcher);

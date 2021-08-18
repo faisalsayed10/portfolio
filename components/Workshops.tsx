@@ -6,27 +6,34 @@ import WorkshopCard from "./WorkshopCard";
 interface Props {}
 
 type Workshop = {
-  slug: string;
-  name: string;
+  author: string;
   description: string;
   img: string;
-  tags: any[];
-  author: string;
+  name: string;
+  slug: string;
+  tags: string[];
 };
 
 const url = "/api/workshops";
 
 const Workshops: React.FC = () => {
-  const { data, error } = useSWR<Workshop[]>(url, fetcher);
+  const { data, error } = useSWR(url, fetcher);
   const [workshops, setWorkshops] = useState<Workshop[]>();
 
-  if (error) console.log(error);
+  if (error) console.error(error);
 
   useEffect(() => {
     if (!data) return;
-    const filtered = data.filter(
-      (workshop) => workshop.author === "@faisalsayed10"
-    );
+    let allWorkshops: Workshop[] = [];
+    data.forEach((category) => {
+      allWorkshops.push(category.workshops);
+    });
+
+    const filtered = allWorkshops
+      .flat()
+      .filter((workshop) => workshop.author === "@faisalsayed10");
+
+    console.log(filtered);
 
     setWorkshops(filtered);
   }, [data]);

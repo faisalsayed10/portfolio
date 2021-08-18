@@ -23,13 +23,13 @@ const Intro: React.FC = () => {
 
   return (
     <>
-      <div className="flex flex-col-reverse lg:flex-row items-center lg:mb-20 pt-20 lg:min-h-screen justify-center lg:justify-between">
+      <div className="flex flex-col-reverse lg:flex-row items-center lg:mb-0 mb-20 pt-20 lg:min-h-screen justify-center lg:justify-between">
         <motion.h1
           variants={container}
           ref={ref}
           initial="hidden"
           animate={controls}
-          className="text-3xl md:text-4xl lg:text-4xl xl:text-6xl lg:ml-20 xl:ml-40 text-center lg:text-left tracking-normal leading-tight font-semibold antialiased"
+          className="text-4xl md:text-4xl lg:text-5xl xl:text-6xl lg:ml-20 xl:ml-40 text-center lg:text-left tracking-normal leading-tight font-extrabold antialiased"
         >
           {items.map((item, i) => (
             <motion.p key={i} variants={introListVariant}>

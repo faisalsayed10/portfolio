@@ -18,7 +18,7 @@ const About: React.FC<Props> = (props) => {
     <>
       <div
         id="about"
-        className="flex max-w-screen-prose mb-20 pb-10  lg:flex-row-reverse flex-col-reverse"
+        className="flex max-w-screen-prose mb-20 pb-10 md:flex-row-reverse flex-col-reverse"
       >
         <motion.div
           variants={defaultVariant}
@@ -30,7 +30,7 @@ const About: React.FC<Props> = (props) => {
           <h3 className="flex items-center text-blue-800 lg:mb-10 mb-6 text-xl font-medium antialiased">
             <div className="bar bg-blue-800 mr-3"></div>About Me
           </h3>
-          <h2 className="md:text-2xl text-lg text-gray-800 text-left font-bold antialiased">
+          <h2 className="md:text-xl text-lg text-gray-800 text-left font-semibold antialiased">
             Hi there 👋 I'm and 16 I thought I should code when I was 12 👦
             <br />
             So far I've created many side-projects and simultaneously tried to
@@ -43,7 +43,7 @@ const About: React.FC<Props> = (props) => {
         </motion.div>
         <div className="flex-1 flex flex-col items-center justify-center mt-8">
           <div className="w-20 h-1 bg-black"></div>
-          <img className="h-auto block my-0 mx-auto" src="/gummy-coding.png" />
+          <img className="h-auto block computer my-0 mx-auto" src="/gummy-coding.png" />
         </div>
       </div>
     </>

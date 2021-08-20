@@ -7,20 +7,20 @@ import Form from "./Form";
 interface Props {}
 
 const ContactForm: React.FC<Props> = (props) => {
-	const [message, setMessage] = useState("");
-	const { register, handleSubmit } = useForm<Mail>();
+  const [message, setMessage] = useState("");
+  const { register, handleSubmit } = useForm<Mail>();
 
-	const sendMessage = async (data: Mail) => {
-		try {
-			await axios.post("/api/sendMail", data);
-			setMessage("Your message has been sent! \n I'll get back to you soon.");
-		} catch (err) {
-			console.error(err);
-			setMessage("Sorry! An unexpected error occured.");
-		}
-	};
+  const sendMessage = async (data: Mail) => {
+    try {
+      await axios.post("/api/sendMail", data);
+      setMessage("Your message has been sent! \n I'll get back to you soon.");
+    } catch (err) {
+      console.error(err);
+      setMessage("Sorry! An unexpected error occured.");
+    }
+  };
 
-	return (
+  return (
     <>
       <div className="mb-20">
         <h3 className="flex items-center text-blue-800 xl:ml-40 lg:mb-12 text-lg md:text-xl ml-6 mr-2 font-medium antialiased">

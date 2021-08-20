@@ -26,7 +26,10 @@ const Skills: React.FC<Props> = (props) => {
         <h3 className="flex items-center text-blue-800 lg:mb-12 mb-4 xl:ml-40 text-xl font-medium antialiased">
           <div className="bar bg-blue-800 mr-3"></div>My Skills
         </h3>
-        <div className="grid grid-cols-2 md:gap-10 gap-3 sm:grid-cols-3 sm:text-xl text-md font-semibold antialiased sm:place-items-center">
+        <div
+          data-aos="fade-up"
+          className="grid grid-cols-2 md:gap-10 gap-3 sm:grid-cols-3 sm:text-xl text-md font-semibold antialiased sm:place-items-center"
+        >
           <p>
             <span className="text-blue-800">○</span>{" "}
             <FontAwesomeIcon icon={faHtml5} /> Vanilla HTML

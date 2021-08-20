@@ -1088,6 +1088,41 @@
     "@sendgrid/client" "^7.4.2"
     "@sendgrid/helpers" "^7.4.2"
 
+"@stickyroll/context@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@stickyroll/context/-/context-1.2.0.tgz#6b8e45b427e611a892d9de8562ff545a984d2fc6"
+  integrity sha512-LPG5mHaynNcLhbnLdIG0xUR1JjsuySeAIZ/PgsctbLAAer1f3lJAdZGlXDpVcn/L3PDOwV16zt7ObtbCx6kPiQ==
+
+"@stickyroll/frame@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@stickyroll/frame/-/frame-1.2.0.tgz#641870028b59e29ee4d1c64226856668bf69008f"
+  integrity sha512-GDI34hheWL9Jk4pwKYLIHtXRuzCG1V5jcfu2o9o4Pf490yOCXQ47zXTcByMDOuoNskmZOX5hdMXvLaF2zctv5g==
+  dependencies:
+    "@stickyroll/context" "^1.2.0"
+    "@stickyroll/tracker" "^1.2.0"
+    "@stickyroll/utils" "^1.2.0"
+
+"@stickyroll/stickyroll@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@stickyroll/stickyroll/-/stickyroll-1.2.0.tgz#a4a1f0cb94a7492fc57748e80be24b2ddf266896"
+  integrity sha512-HVP/BXrdHmTbPUyXnd6URaf6PP7Bg8QYqTlzHMz5jg2WoMGjCtepvNGStpddFRa/I0rWmeZL6DVk43N31z2PdA==
+  dependencies:
+    "@stickyroll/context" "^1.2.0"
+    "@stickyroll/frame" "^1.2.0"
+    "@stickyroll/tracker" "^1.2.0"
+
+"@stickyroll/tracker@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@stickyroll/tracker/-/tracker-1.2.0.tgz#aeda91b4d30a9aca399bb7cb894b227e65233985"
+  integrity sha512-UCUkDa6vG0ZYsnsEHnSog8flLLhNdG//a0h8e9dY9ie50SWDEZk2J21+T2Gzlc49HINtEuP37NhuWuarqwZt0A==
+  dependencies:
+    "@stickyroll/utils" "^1.2.0"
+
+"@stickyroll/utils@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@stickyroll/utils/-/utils-1.2.0.tgz#76ca6064cf944ebaa8adee2dfe74f4cde91a0971"
+  integrity sha512-gt1hYn/km3J+sUjRPYanf2aM9LkndpsKon5fCpZU997VIh3iQjAGMFxdBl9QtSnMf61qAfnqdSS8HvuIPPMp8Q==
+
 "@svgr/babel-plugin-add-jsx-attribute@^5.4.0":
   version "5.4.0"
   resolved "https://registry.yarnpkg.com/@svgr/babel-plugin-add-jsx-attribute/-/babel-plugin-add-jsx-attribute-5.4.0.tgz#81ef61947bb268eb9d50523446f9c638fb355906"
@@ -1725,7 +1760,7 @@ classnames@2.2.6:
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
   integrity sha512-JR/iSQOSt+LQIWwrwEzJ9uk0xfN3mTVYMwt1Ir5mUcSN6pU+V4zQFFaJsclJbPuAUQH+yfWef6tm7l1quW3C8Q==
 
-classnames@^2.1.2, classnames@^2.2.5:
+classnames@^2.2.5:
   version "2.3.1"
   resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.3.1.tgz#dfcfa3891e306ec1dad105d0e88f4417b8535e8e"
   integrity sha512-OlQdbZ7gLfGarSqxesMesDa5uz7KFbID8Kpq/SxIoNGDqY8lSYs0D+hhtBXhcdB3rcbXArFr7vlHheLk1voeNA==
@@ -3530,7 +3565,7 @@ process@0.11.10, process@^0.11.10:
   resolved "https://registry.yarnpkg.com/process/-/process-0.11.10.tgz#7332300e840161bda3e69a1d1d91a7d4bc16f182"
   integrity sha1-czIwDoQBYb2j5podHZGn1LwW8YI=
 
-prop-types@15.7.2, prop-types@^15.5.10, prop-types@^15.7.2:
+prop-types@15.7.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -3674,15 +3709,6 @@ react-refresh@0.8.3:
   version "0.8.3"
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.8.3.tgz#721d4657672d400c5e3c75d063c4a85fb2d5d68f"
   integrity sha512-X8jZHc7nCMjaCqoU+V2I0cOhNW+QMBwSUkeXnTi8IPe6zaRWfn60ZzvFDZqWPfmSJfjub7dDW1SP0jaHWLu/hg==
-
-react-rotating-text@^1.4.1:
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/react-rotating-text/-/react-rotating-text-1.4.1.tgz#9fcdfa5b3b2ddb21ea51d46ff9f3c29ffed59ad6"
-  integrity sha512-PithohDtcWAxrdCmIUbNLkgC+S4VTPVFWybLLCfHQ9udaxtC8Uw7PYGKSScwFxkZuaTKWwbpaPwRFTMsAtHeGA==
-  dependencies:
-    classnames "^2.1.2"
-    lodash.toarray "^4.4.0"
-    prop-types "^15.5.10"
 
 react-slick@^0.28.1:
   version "0.28.1"
@@ -4301,6 +4327,11 @@ url@^0.11.0:
   dependencies:
     punycode "1.3.2"
     querystring "0.2.0"
+
+use-media@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/use-media/-/use-media-1.4.0.tgz#e777bf1f382a7aacabbd1f9ce3da2b62e58b2a98"
+  integrity sha512-XsgyUAf3nhzZmEfhc5MqLHwyaPjs78bgytpVJ/xDl0TF4Bptf3vEpBNBBT/EIKOmsOc8UbuECq3mrP3mt1QANA==
 
 use-subscription@1.5.1:
   version "1.5.1"

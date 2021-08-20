@@ -7,6 +7,10 @@ html {
   background-size: cover;
 }
 
+body {
+  margin: 0;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -68,25 +72,8 @@ a {
   transform: scale(1.05);
 }
 
-.react-rotating-text-cursor {
-  animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s
-    infinite;
-}
-
-@keyframes blinking-cursor {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
 @media (max-width: 800px) {
   .computer {
-    max-width: 400px;
+    max-width: 320px;
   }
 }

@@ -58,7 +58,7 @@ const Projects: React.FC = () => {
 	return (
     <>
       <div className="mb-20" id="projects">
-        <h3 className="flex items-center text-blue-800 xl:ml-40 lg:mb-12 text-lg md:text-xl ml-6 mr-2 font-medium antialiased">
+        <h3 className="flex items-center text-blue-800 xl:ml-40 lg:mb-10 mb-4 text-lg md:text-xl ml-6 mr-2 font-medium antialiased">
           <div className="bar bg-blue-800 mr-3"></div>Projects I've Worked On
         </h3>
 

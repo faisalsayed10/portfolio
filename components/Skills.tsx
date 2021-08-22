@@ -23,7 +23,7 @@ const Skills: React.FC<Props> = (props) => {
 	return (
     <>
       <div className="mb-20 ml-6">
-        <h3 className="flex items-center text-blue-800 lg:mb-12 mb-4 xl:ml-40 text-xl font-medium antialiased">
+        <h3 className="flex items-center text-blue-800 lg:mb-10 mb-4 xl:ml-40 text-xl font-medium antialiased">
           <div className="bar bg-blue-800 mr-3"></div>My Skills
         </h3>
         <div

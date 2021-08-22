@@ -30,7 +30,7 @@ const About: React.FC<Props> = (props) => {
           className="flex flex-col align-center md:justify-center lg:mx-20 mx-6 flex-1"
           data-aos={isWide ? "fade-left" : "fade-up"}
         >
-          <h3 className="flex items-center text-blue-800 lg:mb-10 mb-6 text-xl font-medium antialiased">
+          <h3 className="flex items-center text-blue-800 lg:mb-10 mb-4 text-xl font-medium antialiased">
             <div className="bar bg-blue-800 mr-3"></div>About Me
           </h3>
           <h2 className="md:text-xl text-lg text-gray-800 text-left font-semibold antialiased">

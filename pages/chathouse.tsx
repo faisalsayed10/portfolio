@@ -49,7 +49,7 @@ const chathouse = (props: Props) => {
         </div>
         <div className="bg-blue-500 text-white font-medium antialiased">
           <div className="text-xl lg:ml-20  ml-6 mb-20">
-            <h3 className="flex items-center text-blue-800 text-2xl mb-6 pt-6">
+            <h3 className="flex items-center text-blue-800 text-2xl mb-4 pt-6">
               <div className="bar bg-blue-800 mr-3"></div>Stack Used
             </h3>
             <p>
@@ -75,7 +75,7 @@ const chathouse = (props: Props) => {
             </p>
           </div>
           <div className="text-xl lg:ml-20 ml-6  mb-20 lg:w-1/2">
-            <h3 className="flex items-center text-2xl text-blue-800 mb-6">
+            <h3 className="flex items-center text-2xl text-blue-800 mb-4">
               <div className="bar bg-blue-800 mr-3"></div>Inspiration And Goal
             </h3>
             <p>
@@ -85,7 +85,7 @@ const chathouse = (props: Props) => {
             </p>
           </div>
           <div className="text-xl lg:ml-20 ml-6 pb-6  lg:w-1/2">
-            <h3 className="flex items-center text-2xl text-blue-800 mb-6">
+            <h3 className="flex items-center text-2xl text-blue-800 mb-4">
               <div className="bar bg-blue-800 mr-3"></div>What I Learned And
               Conclusion
             </h3>

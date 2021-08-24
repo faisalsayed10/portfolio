@@ -22,13 +22,13 @@ interface Props {}
 const Skills: React.FC<Props> = (props) => {
 	return (
     <>
-      <div className="mb-20 ml-6">
+      <div className="mb-20">
         <h3 className="flex items-center text-blue-800 lg:mb-10 mb-4 xl:ml-40 text-xl font-medium antialiased">
           <div className="bar bg-blue-800 mr-3"></div>My Skills
         </h3>
         <div
           data-aos="fade-up"
-          className="grid grid-cols-2 md:gap-10 gap-3 sm:grid-cols-3 sm:text-xl text-md font-semibold antialiased sm:place-items-center"
+          className="grid grid-cols-2 md:gap-10 gap-3 sm:grid-cols-3 sm:text-xl text-md font-semibold antialiased sm:place-items-center ml-6"
         >
           <p>
             <span className="text-blue-800">○</span>{" "}

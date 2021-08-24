@@ -34,7 +34,7 @@ const About: React.FC<Props> = (props) => {
             <div className="bar bg-blue-800 mr-3"></div>About Me
           </h3>
           <h2 className="md:text-xl text-lg text-gray-800 text-left font-semibold antialiased">
-            Hi there 👋 I'm and 16 I thought I should code when I was 12 👦
+            Hi there 👋 I'm 16 and I started coding when I was 12 👦
             <br />
             So far I've created many side-projects and simultaneously tried to
             improve my skills and standards.

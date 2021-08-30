@@ -1,4 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+  font-family: 'Public Sans', sans-serif;
+}
 
 html {
   background-color: #ffffff;
@@ -16,11 +24,8 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
-  font-family: "Nunito", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  scroll-behavior: smooth;
+.whatido {
+  font-family: 'Syne', sans-serif;
 }
 
 .hover-trigger .hover-target {
@@ -73,6 +78,12 @@ a {
 }
 
 @media (max-width: 800px) {
+  .computer {
+    max-width: 420px;
+  }
+}
+
+@media (max-width: 500px) {
   .computer {
     max-width: 320px;
   }

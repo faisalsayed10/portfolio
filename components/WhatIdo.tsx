@@ -32,7 +32,7 @@ const WhatIdo: React.FC = () => {
             >
               <h1
                 style={{ opacity: progress }}
-                className="text-6xl sm:text-9xl md:text-9xl lg:text-9xl xl:text-9xl font-semibold antialiased"
+                className="text-6xl whatido sm:text-9xl md:text-9xl lg:text-9xl xl:text-9xl font-semibold antialiased"
               >
                 {headlines[pageIndex]}
               </h1>

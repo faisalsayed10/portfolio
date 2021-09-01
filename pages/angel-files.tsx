@@ -47,7 +47,7 @@ const angelfiles = (props: Props) => {
             </a>
           </div>
         </div>
-        <div className="bg-blue-500 text-white font-medium antialiased">
+        <div className="font-medium antialiased">
           <div className="text-xl lg:ml-20  ml-6 mb-20">
             <h3 className="flex items-center text-blue-800 text-2xl mb-4 pt-6">
               <div className="bar bg-blue-800 mr-3"></div>Stack Used

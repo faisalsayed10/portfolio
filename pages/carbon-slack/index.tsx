@@ -14,7 +14,8 @@ const carbonSlack = () => {
 			</Head>
 			<div className="px-10">
 				<ProjectNavbar title="Carbon Slack" git_url="carbon-slack" />
-				<div className="flex flex-col items-center text-center justify-center my-24">
+				<img src="/carbon-slack.png" width="256" className="block my-6 mx-auto" />
+				<div className="flex flex-col items-center text-center justify-center mb-24">
 					<motion.h1
 						variants={defaultVariant}
 						initial="hidden"

@@ -3,7 +3,7 @@
     "project_image": "/carbon-slack.png",
     "title": "Carbon Slack",
     "desc": "A slack-bot which integrates carbon directly into slack! This makes it easier to share code snippets without leaving slack at all!",
-    "more_url": "/carbon-slack"
+    "more_url": "https://carbon-slack.fayd.me"
   },
   {
     "project_image": "/safire.png",

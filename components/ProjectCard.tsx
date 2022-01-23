@@ -2,14 +2,14 @@ interface Props {
   project_image: string;
   title: string;
   desc: string;
-  more_url: string;
+  slug: string;
 }
 
 const ProjectCard: React.FC<Props> = ({
   project_image,
   title,
   desc,
-  more_url,
+  slug,
 }) => {
   return (
     <div className="flex flex-col items-center justify-evenly rounded-3xl card hover-trigger max-w-sm my-0 mx-auto">
@@ -19,7 +19,7 @@ const ProjectCard: React.FC<Props> = ({
       />
       <h1 className="text-2xl font-semibold ">{title}</h1>
       <p className="text-md px-6 font-medium text-center">{desc}</p>
-      <a href={more_url}>
+      <a href={`/projects/${slug}`}>
         <button className="rounded-lg bg-blue-900 hover-target text-white px-4 py-2">
           Learn More
         </button>

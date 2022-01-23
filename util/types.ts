@@ -2,7 +2,15 @@ export type Project = {
 	project_image: string;
 	title: string;
 	desc: string;
-	more_url: string;
+	slug: string;
+	images: string[];
+	link: string;
+	github: string;
+	producthunt: string;
+	stack: string[];
+	what: string;
+	why: string;
+	how: string;
 };
 
 export type Mail = {
@@ -10,4 +18,4 @@ export type Mail = {
 	name: string;
 	subject: string;
 	message: string;
-}
+};

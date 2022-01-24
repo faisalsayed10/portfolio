@@ -4,33 +4,32 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 
 interface Props {
-  title: string;
-  git_url: string;
+	title: string;
+	git_url: string;
 }
 
 const ProjectNavbar: React.FC<Props> = ({ title, git_url }) => {
-  return (
-    <div className="flex pt-10 px-10 items-center">
-      <h2 className="tracking-wider font-medium text-xl md:text-2xl sm:mr-16 z-20">
-        {title}
-      </h2>
-      <a href={`https://github.com/faisalsayed10/${git_url}`} target="_blank">
-        <div className="mr-6 font-medium text-gray-600 hover:text-gray-600">
-          <h2 className="tracking-wider hidden sm:block text-l">Open Source</h2>
-        </div>
-      </a>
-      <a href="mailto:faisal.sayed502@gmail.com" target="_blank">
-        <div className="mr-6 font-medium text-gray-600 hover:text-gray-600">
-          <h2 className="tracking-wider hidden sm:block text-l">Contact me</h2>
-        </div>
-      </a>
-      <a href="/">
-        <div className="mr-6 font-medium text-gray-600 hover:text-gray-600">
-          <h2 className="tracking-wider text-l">Home</h2>
-        </div>
-      </a>
-    </div>
-  );
+	return (
+		<div className="hidden sm:flex pt-10 px-10 items-baseline">
+			<h2 className="tracking-wider font-medium text-xl md:text-2xl sm:mr-10 z-20">{title}</h2>
+			{git_url && (
+				<a
+					href={git_url}
+					target="_blank"
+					className="mr-6 font-medium text-gray-400 hover:text-gray-600 tracking-wider"
+				>
+					Open Source
+				</a>
+			)}
+			<a
+				href="mailto:faisal.sayed502@gmail.com"
+				target="_blank"
+				className="font-medium text-gray-400 hover:text-gray-600 tracking-wider"
+			>
+				Contact me
+			</a>
+		</div>
+	);
 };
 
 export default ProjectNavbar;

@@ -20,7 +20,7 @@ const ProjectCard: React.FC<Props> = ({
       <h1 className="text-2xl font-semibold ">{title}</h1>
       <p className="text-md px-6 font-medium text-center">{desc}</p>
       <a href={`/projects/${slug}`}>
-        <button className="rounded-lg bg-blue-900 hover-target text-white px-4 py-2">
+        <button className="rounded-lg bg-blue-600 hover-target text-white px-4 py-2">
           Learn More
         </button>
       </a>

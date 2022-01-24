@@ -91,7 +91,7 @@ export async function getStaticPaths() {
 	const url =
 		process.env.NODE_ENV !== "production"
 			? "http://localhost:3000/projects.json"
-			: "https://fayd.me/projects.json";
+			: "https://raw.githubusercontent.com/faisalsayed10/portfolio/main/public/projects.json";
 	const res = await fetch(url);
 	const projects: Project[] = await res.json();
 
@@ -106,7 +106,7 @@ export async function getStaticProps({ params }) {
 	const url =
 		process.env.NODE_ENV !== "production"
 			? "http://localhost:3000/projects.json"
-			: "https://fayd.me/projects.json";
+			: "https://raw.githubusercontent.com/faisalsayed10/portfolio/main/public/projects.json";
 	const res = await fetch(url);
 	const projects: Project[] = await res.json();
 	const data = projects.filter((p) => p.slug === params.slug)[0];

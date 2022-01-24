@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 * {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
-  font-family: 'Public Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 html {
@@ -75,6 +78,10 @@ a {
 
 .hover-card:hover {
   transform: scale(1.05);
+}
+
+.project-hero {
+  min-height: 90vh;
 }
 
 @media (max-width: 800px) {

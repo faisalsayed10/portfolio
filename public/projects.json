@@ -1,17 +1,17 @@
 [
 	{
-		"project_image": "/carbon-slack.png",
-		"title": "Carbon for Slack",
-		"desc": "A Slackbot which integrates carbon directly into slack! This makes it easier to share code snippets without leaving Slack at all!",
-		"slug": "carbon-slack",
+		"project_image": "/firefiles-logo.png",
+		"title": "Firefiles",
+		"desc": "A SaaS which lets you have your own file-hosting service in minutes.",
+		"slug": "firefiles",
 		"images": ["/carbon-ss-1.png", "/carbon-ss-2.png"],
-		"link": "https://carbon-slack.fayd.me",
-		"github": "https://github.com/faisalsayed10/carbon-slack",
-		"producthunt": "<a href=\"https://www.producthunt.com/posts/carbon-for-slack-v2?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-carbon-for-slack-v2\" target=\"_blank\"><img src=\"https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=315207&theme=light\" alt=\"Carbon for Slack V2 - Carbon for Slack, now faster and better! | Product Hunt\" style=\"width: 250px; height: 54px;\" width=\"250\" height=\"54\" /></a>",
-		"stack": ["NodeJS", "Express", "Deta", "Slack API", "Puppeteer", "Repl.it"],
-		"what": "As a programmer and also being in a programming slack community, sharing code amongst each other is a common thing, So I decided to hack together a slackbot which makes our sharing experience way clean and beautiful! Carbon for Slack takes in your code and converts it to a beautiful image of your code using [carbon](https://carbon.now.sh)! This enhanced the way of sharing code with colleagues and friends, without leaving Slack at all. Carbon for Slack is also officially approved in the Slack App Directory and you can download it for your workspaces too!",
-		"why": "I was curious about the Slack API and I wanted to get a hands-on experience with it by building something. Also, this would be a perfect Slackbot for my slack community, [Hack Club](https://hackclub.com/), since we often shared our code snippets there.",
-		"how": "First, I checked if Carbon already has an API or not. It didn't have an API so I had to code something myself. So I built an API for it which basically used Puppeteer to visit Carbon's website in a browser, generate the image there, take a screenshot of the image and then send it back to the slackbot. So first I took the required inputs like code, background color, font etc. from the users and then used this API to get the image. Once I had the image, I sent its bytes to the Slack API to upload it to Slack."
+		"link": "https://firefiles.vercel.app",
+		"github": "https://github.com/faisalsayed10/firefiles",
+		"producthunt": null,
+		"stack": ["Next.js", "Firebase", "Chakra UI", "Vercel"],
+		"what": "Firefiles is an app which basically provides you with a drive like UI for your storage buckets. Currently, it works with Firebase, so you basically get a file hosting like UI for your firebase cloud storage bucket. This is basically like a UI-AAS, which means that Firefiles only providers you with the UI and you bring your own storage.",
+		"why": "Honestly, there's no real reason to why I built this. I was just thinking about how I can improve my old project <a href=\"https://angel-files.vercel.app\" className=\"underline\">Angelfiles</a> and this random idea came into my head that what if we could have our own personal file hosting service? I think this was a really cool idea and I had a lot of fun building this!",
+		"how": "I had most of the UI ready because I forked my old project Angelfiles and started from there. I only had to do a few tweaks like instead of already providing my Firebase credentials, I replaced them with the user inputted credentials. And there were a few more problems which aroused but I got around it after some hardwork. I also built a self hosting version of firefiles so that the users can host their own firefiles instance!"
 	},
 	{
 		"project_image": "/safire.png",
@@ -23,9 +23,9 @@
 		"github": "https://github.com/safireapp/safire_web",
 		"producthunt": null,
 		"stack": ["Next.js", "Postgres", "Prisma", "Chakra UI", "Cloudinary", "Vercel"],
-		"what": "Every social media which exists today is entirely mis-using their users' data by showing you annoying ads or selling your data for money. So I decided that I want to build my own social media which will be privacy and security oriented, and also end-to-end encrypted for chats and private posts! I have plans to make it an inclusive social media, which, I believe will keep toxicity and spam away from my app. I want to make this social media, to be atleast 90% spam-free and 100% secure.",
-		"why": "I'm building this only for a few specific reasons, one is that I want to try competing with Twitter and if that's really possible? I've seen a lot of new social medias like Twitter have appeared in the past but they also disappeared really fast. As I can see now, Twitter doesn't have any competition at all and competing with someone as big as Twitter is seriously not going to happen and is a bad idea. But I wouldn't care too much about failing, this is where my second reason comes in, this would be my biggest project so far and I'm definitely going to get a ton of experience while building it. I also want to make this platform end-to-end encrypted because I don't think Twitter's chat / private posts are encrypted at all. So, this is all worth trying and in the end I'm definitely going to earn a lot of experience!",
-		"how": "I decided to go entirely serverless, so I'm using Next.js for the front-end and the API routes. I think this would be the first social media platform with technically no servers at all! While most of my API is already ready, the front-end is what is currently a WIP. I'll definitely use Chakra UI for the front-end because it gives a huge boost in building. Talking about the backend, Postgres is what I'm using as my database and to connect my code to my database, Prisma is the one that does that job. I love Prisma! Also to store images and media content, I decided to go with Cloudinary because it also provides you with image optimisations out of the box. Talking about the process of end-to-end encryption, I'll be following the same process by how Whatsapp and Signal have done it - Asymmetric Encryption. At the beginning, implementing this is my app was a big pain and totally confusing, but I feel like I've learnt a lot in the process. Finally, Safire is still a work-in-progress and I expect to release it soon!"
+		"what": "Every social media which exists today is entirely mis-using their users' data by showing you annoying ads or selling your data for money. So I decided to build my own social media which will be privacy and security oriented, and also end-to-end encrypted for chats and private posts! <br /><br /> I have plans to make it an inclusive social media, which, I believe will keep toxicity and spam away from my app. I want to make this social media, to be atleast 90% spam-free and 100% secure.",
+		"why": "I'm building this only for a few specific reasons, one is that I want to try competing with Twitter and to see if that's really possible? I've seen a lot of new social medias like Twitter have appeared in the past but they also disappeared really fast. <br /><br /> As I can see now, Twitter doesn't have any competition at all and competing with someone as big as Twitter is seriously not going to happen and is a bad idea. But I wouldn't care too much about failing, this is where my second reason comes in, this would be my biggest project so far and I'm definitely going to get a ton of experience while building it. <br /><br /> I also want to make this platform end-to-end encrypted because I don't think Twitter's chat / private posts are encrypted at all. So, this is all worth trying and in the end I'm definitely going to earn a lot of experience!",
+		"how": "I decided to go entirely serverless, so I'm using Next.js for the front-end and the API routes. I think this would be the first social media platform with technically no servers at all! While most of my API is already ready, the front-end is what is currently a WIP. I'll definitely use Chakra UI for the front-end because it gives a huge boost in building. <br /><br /> Talking about the backend, Postgres is what I'm using as my database and to connect my code to my database, Prisma is the one that does that job. I love Prisma! Also to store images and media content, I decided to go with Cloudinary because it also provides you with image optimisations out of the box. <br /><br /> Talking about the process of end-to-end encryption, I'll be following the same process by how Whatsapp and Signal have done it - Asymmetric Encryption. At the beginning, implementing this is my app was a big pain and totally confusing, but I feel like I've learnt a lot in the process. Finally, Safire is still a work-in-progress and I expect to release it soon!"
 	},
 	{
 		"project_image": "/twacc-logo.png",
@@ -46,23 +46,23 @@
 			"Redis",
 			"Oracle Linux VM"
 		],
-		"what": "If I say it in a sentence, Twacc is a Slackbot which lets you manage your Twitter account along with your team directly in Slack. Using Twacc, you can directly compose tweets and threads and read your twitter feed directly in Slack. Not only this, Twacc even lets you allow other people in your workspace to tweet from the same account. This makes managing your startup's / product's twitter account much easier and more efficient.",
-		"why": "Mostly all companies and startups out there use a Slack workspace for their team. Those companies also usually have a twitter account which is managed by their marketing department or maybe a few people from their team. The usual way the companies do this is that they share their brand account's password with each other and this makes their account vulnerable. I think Twacc solves exactly this problem. By using twacc, only one person has to have the password and the rest of them can seamlessly use the twitter account without having the need to share the password.",
-		"how": "If we look at it from the outside, it looks pretty simple. Get the twitter feed -> post it to slack. And for tweeting, get the slack message -> post it to twitter. But there were a lot of edge cases and problems I had to handle and I think this was seriously one of the tougher projects I've built. I'm still dealing with the problem of character limit as twitter has a strict character limit and we need to alert the user before tweeting if they exceed the limit or else it will just fail. So yeah, I used (as always) Nodejs for my back-end, all the necessary user data is stored in my Deta-base, Slack API and Twitter API were mostly everywhere in my app. To send the user's twitter feed periodically to them, I had to use redis to schedule cron-jobs every 5 minutes and it basically then fetched the feed and posted it to their twitter channel on slack. Finally, Twacc is now deployed on a Linux VM in Oracle Cloud!"
+		"what": "If I say it in a sentence, Twacc is a Slackbot which lets you manage your Twitter account along with your team directly in Slack. Using Twacc, you can directly compose tweets and threads and read your twitter feed directly in Slack. <br /><br /> Not only this, Twacc even lets you allow other people in your workspace to tweet from the same account. This makes managing your startup's / product's twitter account much easier and more efficient.",
+		"why": "Mostly all companies and startups out there use a Slack workspace for their team. Those companies also usually have a twitter account which is managed by their marketing department or maybe a few people from their team. The usual way the companies do this is that they share their brand account's password with each other and this makes their account vulnerable. <br /><br /> I think Twacc solves exactly this problem. By using twacc, only one person has to have the password and the rest of them can seamlessly use the twitter account without having the need to share the password.",
+		"how": "If we look at it from the outside, it looks pretty simple. Get the twitter feed -> post it to slack. And for tweeting, get the slack message -> post it to twitter. But there were a lot of edge cases and problems I had to handle and I think this was seriously one of the tougher projects I've built. <br /><br /> I'm still dealing with the problem of character limit as twitter has a strict character limit and we need to alert the user before tweeting if they exceed the limit or else it will just fail. So yeah, I used (as always) Nodejs for my back-end, all the necessary user data is stored in my Deta-base, Slack API and Twitter API were mostly everywhere in my app. <br /><br /> To send the user's twitter feed periodically to them, I had to use redis to schedule cron-jobs every 5 minutes and it basically then fetched the feed and posted it to their twitter channel on slack. Finally, Twacc is now deployed on a Linux VM in Oracle Cloud!"
 	},
 	{
-		"project_image": "/firefiles-logo.png",
-		"title": "Firefiles",
-		"desc": "A SaaS which lets you have your own file-hosting service in minutes.",
-		"slug": "firefiles",
+		"project_image": "/carbon-slack.png",
+		"title": "Carbon for Slack",
+		"desc": "A Slackbot which integrates carbon directly into slack! This makes it easier to share code snippets without leaving Slack at all!",
+		"slug": "carbon-slack",
 		"images": ["/carbon-ss-1.png", "/carbon-ss-2.png"],
-		"link": "https://firefiles.vercel.app",
-		"github": "https://github.com/faisalsayed10/firefiles",
-		"producthunt": null,
-		"stack": ["Next.js", "Firebase", "Chakra UI", "Vercel"],
-		"what": "Firefiles is an app which basically provides you with a drive like UI for your storage buckets. Currently, it works with Firebase, so you basically get a file hosting like UI for your firebase cloud storage bucket. This is basically like a UI-AAS, which means that Firefiles only providers you with the UI and you bring your own storage.",
-		"why": "Honestly, there's no real reason to why I built this. I was just thinking about how I can improve my old project [Angelfiles](https://angel-files.vercel.app) and this random idea came into my head that what if we could have our own personal file hosting service? I think this was a really cool idea and I had a lot of fun building this!",
-		"how": "I had most of the UI ready because I forked my old project Angelfiles and started from there. I only had to do a few tweaks like instead of already providing my Firebase credentials, I replaced them with the user inputted credentials. And there were a few more problems which aroused but I got around it after some hardwork. I also built a self hosting version of firefiles so that the users can host their own firefiles instance!"
+		"link": "https://carbon-slack.fayd.me",
+		"github": "https://github.com/faisalsayed10/carbon-slack",
+		"producthunt": "<a href=\"https://www.producthunt.com/posts/carbon-for-slack-v2?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-carbon-for-slack-v2\" target=\"_blank\"><img src=\"https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=315207&theme=light\" alt=\"Carbon for Slack V2 - Carbon for Slack, now faster and better! | Product Hunt\" style=\"width: 250px; height: 54px;\" width=\"250\" height=\"54\" /></a>",
+		"stack": ["NodeJS", "Express", "Deta", "Slack API", "Puppeteer", "Repl.it"],
+		"what": "As a programmer and also being in a programming slack community, sharing code amongst each other is a common thing, So I decided to hack together a slackbot which makes our sharing experience way clean and beautiful! <br /><br /> Carbon for Slack takes in your code and converts it to a beautiful image of your code using <a href=\"https://carbon.now.sh\" className=\"underline\">carbon</a>. This enhanced the way of sharing code with colleagues and friends, without leaving Slack at all. <br /><br /> Carbon for Slack is also an officially approved Slack app and you can download it for your workspaces too!",
+		"why": "I was curious about the Slack API and I wanted to get a hands-on experience with it by building something. Also, this would be a perfect Slackbot for my slack community, <a href=\"https://hackclub.com\" className=\"underline\">Hack Club</a>, since we often shared our code snippets there.",
+		"how": "First, I checked if Carbon already has an API or not. It didn't have an API so I had to code something myself. So I built an API for it which basically used Puppeteer to visit Carbon's website in a browser, generate the image there, take a screenshot of the image and then send it back to the slackbot. <br /><br /> So first I took the required inputs like code, background color, font etc. from the users and then used this API to get the image. Once I had the image, I sent its bytes to the Slack API to upload it to Slack."
 	},
 	{
 		"project_image": "/chathouse.png",
@@ -73,9 +73,21 @@
 		"link": "https://chathouse.vercel.app",
 		"github": "https://github.com/faisalsayed10/chathouse",
 		"producthunt": null,
-		"stack": ["React", "Firebase", "Chakra UI", "Draft JS", "Apollo Client", "Websockets", "Nodejs", "GraphQL", "Express", "Heroku", "Vercel"],
+		"stack": [
+			"React",
+			"Firebase",
+			"Chakra UI",
+			"Draft JS",
+			"Apollo Client",
+			"Websockets",
+			"Nodejs",
+			"GraphQL",
+			"Express",
+			"Heroku",
+			"Vercel"
+		],
 		"what": "Chathouse is nothing but a fun chat app where anyone can drop-in and chat with everyone. Just to make things more fun, I also added rich text support to the chat app. You can use bold, italic, underline, strikethrough, and many more features while posting a message.",
 		"why": "I was just getting started with back-end, I think this was my first full-stack project and it wouldn't be exaggeration to say that I learnt a LOT of things from this project. I learnt how to use GraphQL, Apollo Client, and Websockets. I also learnt how to use Heroku and Vercel to deploy my project. I also learnt how to use Nodejs and Express to build a scalable back-end. I also learnt how to use Firebase for database and authentication and Chakra UI for building the UI.",
-		"how": "First I started with building the back-end which was simply a Nodejs app with GraphQL and Express. I used GraphQL for authenticating the user, sending messages and also receiving messages. On the front-end, I used React and Chakra UI for building out the authentication pages and also the main chatroom page. I then used websockets to receive messages real-time so that the user doesn't have to refresh to receive the new data. For the rich text editor, I used Draft JS to build a favourable text editor. Finally, I deployed the back-end on Heroku and the front-end on Vercel."
+		"how": "First I started with building the back-end which was simply a Nodejs app with GraphQL and Express. I used GraphQL for authenticating the user, sending messages and also receiving messages. On the front-end, I used React and Chakra UI for building out the authentication pages and also the main chatroom page. <br /><br /> I then used websockets to receive messages real-time so that the user doesn't have to refresh to receive the new data. For the rich text editor, I used Draft JS to build a favourable text editor. Finally, I deployed the back-end on Heroku and the front-end on Vercel."
 	}
 ]

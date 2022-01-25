@@ -43,7 +43,8 @@ const ProjectPage: React.FC<Props> = ({ data }) => {
 					>
 						{data.desc}
 					</motion.p>
-					<div>
+					{parse(data.producthunt ?? "")}
+					<div className="mt-2">
 						<button
 							onClick={() => data.link && window.open(data.link, "_blank")}
 							className={`${
@@ -52,33 +53,43 @@ const ProjectPage: React.FC<Props> = ({ data }) => {
 						>
 							{data.link ? "Try Now" : "Coming Soon"}
 						</button>
-						{data.github ? <button
-							onClick={() => window.open(data.github, "_blank")}
-							className="bg-blue-500 shadow-md text-white font-bold py-2 ml-2 px-8 rounded focus:outline-none focus:shadow-outline"
-						>
-							Source
-						</button> : <></>}
+						{data.github ? (
+							<button
+								onClick={() => window.open(data.github, "_blank")}
+								className="bg-blue-500 shadow-md text-white font-bold py-2 ml-2 px-8 rounded focus:outline-none focus:shadow-outline"
+							>
+								Source
+							</button>
+						) : null}
 					</div>
 				</div>
 				<div className="font-medium antialiased">
+					{data.images.length > 0 ? (
+						<div className="text-xl lg:mx-20 mx-6 mb-10">
+							<h3 className="text-4xl mb-4 pt-6 font-semibold">Screenshots</h3>
+							<div className="flex items-center justify-evenly flex-col md:flex-row">
+								{data.images.map((item, i) => (
+									<img key={i} src={item} className="rounded-md w-full md:w-1/2 h-auto block shadow-md mb-4 ml-4" />
+								))}
+							</div>
+						</div>
+					) : null}
 					<div className="text-xl lg:ml-20 ml-6 mb-10">
-						<h3 className="flex items-center text-4xl mb-4 pt-6 font-semibold">Stack Used</h3>
+						<h3 className="text-4xl mb-4 pt-6 font-semibold">Stack Used</h3>
 						{data.stack.map((item, i) => (
 							<p key={i}>— {item}</p>
 						))}
 					</div>
 					<div className="text-xl lg:ml-20 ml-6 mr-6 mb-10 lg:w-1/2">
-						<h3 className="flex items-center text-4xl mb-4 pt-6 font-semibold">
-							What is this Project?
-						</h3>
+						<h3 className="text-4xl mb-4 pt-6 font-semibold">What is this Project?</h3>
 						<p className="text-center sm:text-left">{parse(data.what)}</p>
 					</div>
 					<div className="text-xl lg:ml-20 ml-6 mr-6 mb-10 lg:w-1/2">
-						<h3 className="flex items-center text-4xl mb-4 pt-6 font-semibold">Why I built it: </h3>
+						<h3 className="text-4xl mb-4 pt-6 font-semibold">Why I built it: </h3>
 						<p className="text-center sm:text-left">{parse(data.why)}</p>
 					</div>
 					<div className="text-xl lg:ml-20 ml-6 mr-6 mb-10 lg:w-1/2">
-						<h3 className="flex items-center text-4xl mb-4 pt-6 font-semibold">How I built it: </h3>
+						<h3 className="text-4xl mb-4 pt-6 font-semibold">How I built it: </h3>
 						<p className="text-center sm:text-left">{parse(data.how)}</p>
 					</div>
 				</div>

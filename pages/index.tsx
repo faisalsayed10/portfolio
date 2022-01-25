@@ -33,7 +33,7 @@ export default function Home() {
 							<Skills />
 							<Projects />
 							<Workshops />
-							<div className="bg-wave2 bg-cover bg-no-repeat">
+							<div className="bg-wave bg-cover bg-no-repeat">
 								<ContactForm />
 								<Footer />
 							</div>

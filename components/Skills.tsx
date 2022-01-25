@@ -32,7 +32,7 @@ const Skills: React.FC<Props> = (props) => {
         >
           <p>
             <span className="text-blue-800">○</span>{" "}
-            <FontAwesomeIcon icon={faHtml5} /> Vanilla HTML
+            <FontAwesomeIcon icon={faHtml5} /> HTML
           </p>
           <p>
             <span className="text-blue-800">○</span>{" "}

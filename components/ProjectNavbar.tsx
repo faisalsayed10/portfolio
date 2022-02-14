@@ -10,7 +10,7 @@ interface Props {
 
 const ProjectNavbar: React.FC<Props> = ({ title, git_url }) => {
 	return (
-		<div className="hidden sm:flex pt-10 px-10 items-baseline">
+		<div className="hidden sm:flex pt-4 px-5 items-baseline">
 			<h2 className="tracking-wider font-medium text-xl md:text-2xl sm:mr-10 z-20">{title}</h2>
 			{git_url && (
 				<a

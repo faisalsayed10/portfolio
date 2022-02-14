@@ -65,29 +65,25 @@
 		"how": "First, I checked if Carbon already has an API or not. It didn't have an API so I had to code something myself. So I built an API for it which basically used Puppeteer to visit Carbon's website in a browser, generate the image there, take a screenshot of the image and then send it back to the slackbot. <br /><br /> So first I took the required inputs like code, background color, font etc. from the users and then used this API to get the image. Once I had the image, I sent its bytes to the Slack API to upload it to Slack."
 	},
 	{
-		"project_image": "/chathouse.png",
-		"title": "Chathouse",
-		"desc": "A fun public drop-in text chat app with rich text support.",
-		"slug": "chathouse",
-		"images": [],
-		"link": "https://chathouse.vercel.app",
-		"github": "https://github.com/faisalsayed10/chathouse",
+		"project_image": "/leaf-logo.png",
+		"title": "Leaf",
+		"desc": "A book tracking app where you can create playlists and save books you wish to read for later.",
+		"slug": "leaf",
+		"images": ["/leaf-ss-1.png", "/leaf-ss-2.png"],
+		"link": "https://useleaf.now.sh/",
+		"github": "https://github.com/faisalsayed10/leaf",
 		"producthunt": null,
 		"stack": [
 			"React",
-			"Firebase",
-			"Chakra UI",
-			"Draft JS",
-			"Apollo Client",
-			"Websockets",
-			"Nodejs",
-			"GraphQL",
-			"Express",
-			"Heroku",
+			"Next.js",
+			"Prisma",
+			"NextAuth",
+			"PostgreSQL",
+			"Railway",
 			"Vercel"
 		],
-		"what": "Chathouse is nothing but a fun chat app where anyone can drop-in and chat with everyone. Just to make things more fun, I also added rich text support to the chat app. You can use bold, italic, underline, strikethrough, and many more features while posting a message.",
-		"why": "I was just getting started with back-end, I think this was my first full-stack project and it wouldn't be exaggeration to say that I learnt a LOT of things from this project. I learnt how to use GraphQL, Apollo Client, and Websockets. I also learnt how to use Heroku and Vercel to deploy my project. I also learnt how to use Nodejs and Express to build a scalable back-end. I also learnt how to use Firebase for database and authentication and Chakra UI for building the UI.",
-		"how": "First I started with building the back-end which was simply a Nodejs app with GraphQL and Express. I used GraphQL for authenticating the user, sending messages and also receiving messages. On the front-end, I used React and Chakra UI for building out the authentication pages and also the main chatroom page. <br /><br /> I then used websockets to receive messages real-time so that the user doesn't have to refresh to receive the new data. For the rich text editor, I used Draft JS to build a favourable text editor. Finally, I deployed the back-end on Heroku and the front-end on Vercel."
+		"what": "Leaf is nothing but a fun book tracking app where you can keep track of books you wish to read by managing playlists of books! Leaf uses Google Books API and has over 10M+ books for you to choose from.",
+		"why": "I wanted to make an app similar to Goodreads because my personal experience with Goodreads was not so good. Their UI looks so outdated now and it is a bit janky. So, this was mainly the reason why I made Leaf. I also got a lot of hands-on experience with Next.js and Prisma. I gained a lot of experience building a real-world project and I think this is one of the many best things I've done so far.",
+		"how": "I decided to use Next.js as my main tech here because it lets you build and integrate API routes in your application seamlessly without having a back-end. So I'd have one less thing to care about. For authenticating the users, I used NextAuth.js which is amazing and pretty much works out of the box with Next.js. <br /><br /> I also wanted to get experience with Prisma and PostgreSQL, therefore I used both of these technologies while building this app. For querying and fetching the books, I used the Google Books API which is quite awesome and has millions of books! Finally, I deployed the main app on Vercel and hosted my PostgreSQL database on Railway!"
 	}
 ]

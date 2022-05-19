@@ -3,7 +3,7 @@ module.exports = {
 		return [
 			{
 				source: "/firefiles-selfhost",
-				destination: "https://firefiles.vercel.app/docs/self-hosted/02-deploy",
+				destination: "https://firefiles.vercel.app/docs",
 				permanent: true
 			}
 		];

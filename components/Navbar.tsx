@@ -43,33 +43,38 @@ export const Navbar: React.FC<Props> = ({ open, setOpen, play, setPlay }) => {
 						</div>
 					</a>
 				</div>
-				<button
-					className={"z-20 focus:outline-none"}
-					onClick={() => setPlay(true)}
-				>
-					<Lottie
-						loop={false}
-						animationData={animationData}
-						segments={segments}
-						play={play}
-						onEnterFrame={(frame) => {
-							if (segmentFrom === 0 && frame.currentTime > 1) setOpen(true);
-							else if (segmentFrom === 45 && frame.currentTime > 1)
-								setOpen(false);
-						}}
-						onComplete={() => {
-							setPlay(false);
-							if (segmentFrom === 0) {
-								setSegmentFrom(45);
-								setSegmentTo(91);
-							} else if (segmentFrom === 45) {
-								setSegmentFrom(0);
-								setSegmentTo(45);
-							}
-						}}
-						className="w-6 h-6"
-					/>
-				</button>
+				<div className="flex items-center gap-5">
+					<iframe
+						src="https://github.com/sponsors/faisalsayed10/button"
+						title="Sponsor faisalsayed10"
+						height="32"
+						width="116"
+						style={{ border: 0, borderRadius: 7 }}
+					></iframe>
+					<button className={"z-20 focus:outline-none"} onClick={() => setPlay(true)}>
+						<Lottie
+							loop={false}
+							animationData={animationData}
+							segments={segments}
+							play={play}
+							onEnterFrame={(frame) => {
+								if (segmentFrom === 0 && frame.currentTime > 1) setOpen(true);
+								else if (segmentFrom === 45 && frame.currentTime > 1) setOpen(false);
+							}}
+							onComplete={() => {
+								setPlay(false);
+								if (segmentFrom === 0) {
+									setSegmentFrom(45);
+									setSegmentTo(91);
+								} else if (segmentFrom === 45) {
+									setSegmentFrom(0);
+									setSegmentTo(45);
+								}
+							}}
+							className="w-6 h-6"
+						/>
+					</button>
+				</div>
 			</div>
 		</>
 	);

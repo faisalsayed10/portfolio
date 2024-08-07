@@ -34,14 +34,12 @@ const About: React.FC<Props> = (props) => {
             <div className="bar bg-blue-800 mr-3"></div>About Me
           </h3>
           <h2 className="sm:text-xl lg:text-2xl text-md text-gray-800 text-left font-semibold antialiased">
-            Hi there 👋 I'm 16 and I started coding when I was 12 👦
+            I'm 18, currently a freshman at the University of Waterloo. I've
+            led many software teams to success and been a pivotal part of many
+            early stage startups.
             <br />
-            So far I've created many side-projects and simultaneously tried to
-            improve my skills and standards.
-            <br />
-            I've always tried to create memorable products that are not only
-            enjoyable to use but are written in code that's maintainable and
-            easy to understand.
+            I got my first Software Developer job at 15 and have been working
+            in the industry ever since.
           </h2>
         </motion.div>
         <div

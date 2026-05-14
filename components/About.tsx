@@ -34,7 +34,7 @@ const About: React.FC<Props> = (props) => {
             <div className="bar bg-blue-800 mr-3"></div>About Me
           </h3>
           <h2 className="sm:text-xl lg:text-2xl text-md text-gray-800 text-left font-semibold antialiased">
-            I'm 18, currently a freshman at the University of Waterloo. I've
+            I'm currently a sophomore at the University of Waterloo. I've
             led many software teams to success and been a pivotal part of many
             early stage startups.
             <br />

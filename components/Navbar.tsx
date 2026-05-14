@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Lottie from "react-lottie-player";
+import dynamic from "next/dynamic";
 import animationData from "@lottie/40209-hamburger-with-colors.json";
+const Lottie = dynamic(() => import("react-lottie-player"), { ssr: false });
 
 interface Props {
 	open: boolean;

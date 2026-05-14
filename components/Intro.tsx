@@ -2,8 +2,10 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import React, { useEffect } from "react";
 import dynamic from "next/dynamic";
+import type LottieType from "react-lottie-player";
+import type { ComponentProps } from "react";
 import animationData from "@lottie/boy-vr.json";
-const Lottie = dynamic(() => import("react-lottie-player"), { ssr: false });
+const Lottie = dynamic<ComponentProps<typeof LottieType>>(() => import("react-lottie-player"), { ssr: false });
 import { container, introListVariant } from "util/variants";
 
 const Intro: React.FC = () => {

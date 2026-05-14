@@ -2,8 +2,11 @@ import React from "react";
 import { faGithub, faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Lottie from "react-lottie-player";
+import dynamic from "next/dynamic";
+import type LottieType from "react-lottie-player";
+import type { ComponentProps } from "react";
 import animationData from "@lottie/49075-cube-loader-representing-module-or-logic.json";
+const Lottie = dynamic<ComponentProps<typeof LottieType>>(() => import("react-lottie-player"), { ssr: false });
 import { motion } from "framer-motion";
 import { container, defaultVariant, overlayListVariant } from "util/variants";
 

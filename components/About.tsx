@@ -38,7 +38,7 @@ const About: React.FC<Props> = (props) => {
             led many software teams to success and been a pivotal part of many
             early stage startups.
             <br />
-            I got my first Software Developer job early and have been working
+            I got my first Software Developer job at 15 and have been working
             in the industry ever since.
           </h2>
         </motion.div>
